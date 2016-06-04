@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">FingerPainting</string>
+    <string name="new_label">New</string>
+    <string name="brush_label">Brush</string>
+    <string name="erase_label">Erase</string>
+    <string name="save_label">Save</string>
+
+    <string name="black_tag">#FF000000</string>
+    <string name="white_tag">#FFFFFFFF</string>
+    <string name="red_tag">#FFFF0000</string>
+    <string name="orange_tag">#FFFFA500</string>
+    <string name="yellow_tag">#FFFFFF00</string>
+    <string name="green_tag">#FF008000</string>
+    <string name="blue_tag">#FF0000FF</string>
+    <string name="purple_tag">#FF800080</string>
+
+    <string name="magenta_tag">#FFCF037C</string>
+    <string name="dark_turquoise_tag">#FF00CED1</string>
+    <string name="peach_tag">#FFFFDAB9</string>
+    <string name="brown_tag">#FF8B4513</string>
+    <string name="dark_gray_tag">#FF696969</string>
+    <string name="orchid_tag">#FFDA70D6</string>
+    <string name="sky_blue_tag">#FF87CEEB</string>
+    <string name="spring_green_tag">#FF00FF7F</string>
+</resources>

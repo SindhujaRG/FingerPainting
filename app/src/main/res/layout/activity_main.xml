@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="edu.niu.cs.sindhujagundreddy.fingerpainting.MainActivity"
+    android:orientation="vertical"
+    android:background="#cbcaca">
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="wrap_content"
+android:layout_height="50dp"
+android:background="#cbcaca"
+android:layout_gravity="center_horizontal">
+
+<Button
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:text="@string/new_label"
+    android:id="@+id/newButton"/>
+
+<Button
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:text="@string/brush_label"
+    android:id="@+id/brushButton" />
+
+<Button
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:text="@string/erase_label"
+    android:id="@+id/eraseButton"/>
+
+<Button
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:text="@string/save_label"
+    android:id="@+id/saveButton" />
+</LinearLayout>
+
+<edu.niu.cs.sindhujagundreddy.fingerpainting.DrawingView
+android:id="@+id/drawing"
+android:layout_width="fill_parent"
+android:layout_height="0dp"
+android:layout_marginBottom="3dp"
+android:layout_marginLeft="5dp"
+android:layout_marginRight="5dp"
+android:layout_marginTop="3dp"
+android:layout_weight="1"
+android:background="#FFFFFFFF"
+android:layout_gravity="center_horizontal"/>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center_horizontal"
+android:id="@+id/colors">
+
+<ImageButton
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_margin="2dp"
+    android:tag="@string/black_tag"
+    android:background="@color/black"
+    android:src="@drawable/paint_color"
+    android:onClick="paintClicked"/>
+
+<ImageButton
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_margin="2dp"
+    android:src="@drawable/paint_color"
+    android:background="@color/white"
+    android:tag="@string/white_tag"
+    android:onClick="paintClicked" />
+
+<ImageButton
+    android:layout_width="@dimen/large_brush"
+    android:layout_height="@dimen/large_brush"
+    android:layout_margin="2dp"
+    android:background="@color/red"
+    android:tag="@string/red_tag"
+    android:src="@drawable/paint_color"
+    android:onClick="paintClicked"/>
+
+<ImageButton
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_margin="2dp"
+    android:src="@drawable/paint_color"
+    android:background="@color/orange"
+    android:tag="@string/orange_tag"
+    android:onClick="paintClicked" />
+
+<ImageButton
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_margin="2dp"
+    android:src="@drawable/paint_color"
+    android:background="@color/yellow"
+    android:tag="@string/yellow_tag"
+    android:onClick="paintClicked" />
+
+<ImageButton
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_margin="2dp"
+    android:src="@drawable/paint_color"
+    android:background="@color/green"
+    android:tag="@string/green_tag"
+    android:onClick="paintClicked" />
+<ImageButton
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_margin="2dp"
+    android:src="@drawable/paint_color"
+    android:background="@color/blue"
+    android:tag="@string/blue_tag"
+    android:onClick="paintClicked" />
+
+<ImageButton
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_margin="2dp"
+    android:src="@drawable/paint_color"
+    android:background="@color/purple"
+    android:tag="@string/purple_tag"
+    android:onClick="paintClicked" />
+</LinearLayout>
+
+    </LinearLayout>
+
